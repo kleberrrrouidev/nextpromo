@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEXTPROMO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+      font-weight: 600;
+    }
+    nav ul li:hover {
+      color: #ff2a2a;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 2em;
+      cursor: pointer;
+      user-select: none;
+    }
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 1.2em;
+      color: #004aad;
+      margin-bottom: 8px;
+    }
+    .card .preco {
+      font-weight: bold;
+      color: #e53935;
+      margin-bottom: 5px;
+    }
+    .card p {
+      margin-bottom: 8px;
+      font-size: 0.95em;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 8px 15px;
+      background-color: #ff2a2a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .card a:hover {
+      background-color: #c90000;
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+      border-top: 4px solid #004aad;
+    }
+    footer .footer-logo {
+      font-size: 1.8em;
+      font-weight: 900;
+      color: #ff2a2a;
+      margin-bottom: 12px;
+      letter-spacing: 4px;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    footer a {
+      color: #ff2a2a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #f5f5f5;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #004aad;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NEXTPROMO</div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="menu">
+        <li>Home</li>
+        <li>Produtos</li>
+        <li><a href="https://t.me/+dSwTM04jQ81kOTMx"target="_blank"> Telegram </a></li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="produtos">
+      <div class="card">
+        <img src="ps5.jpeg" alt="Playstation 5">
+        <h3>Playstation 5</h3>
+        <p class="preco">R$ 3.500</p>
+        <p>Sujeito a variação</p>
+        <a href="https://www.kabum.com.br/produto/542929" target="_blank">Conferir</a>
+      </div>
+      <div class="card">
+        <img src="box.jpeg" alt="Xbox Series S">
+        <h3>Xbox Series S</h3>
+        <p class="preco">R$ 2.300</p>
+        <p>512GB + Gamepass</p>
+        <a href="#" target="_blank">Conferir</a>
+      </div>
+      <div class="card">
+        <img src="g1.jpeg" alt="Mouse Rise Mode G1">
+        <h3>Rise Mode G1</h3>
+        <p class="preco">R$ 100,00</p>
+        <p>De: <span class="preco">R$ 180,00</span></p>
+        <a href="https://www.kabum.com.br/produto/498583" target="_blank">Kabum</a>
+      </div>
+      <div class="card">
+        <img src="pda.webp" alt="Mouse Pad Básico">
+        <h3>Mouse Pad Básico</h3>
+        <p class="preco">R$ 20,00</p>
+        <p>Toque gamer, vale a pena.</p>
+        <a href="https://www.kabum.com.br/produto/134585" target="_blank">Kabum</a>
+      </div>
+      <div class="card">
+        <img src="ssd.webp" alt="SSD 1TB Kingston">
+        <h3>SSD 1TB Kingston</h3>
+        <p>15% off no Pix</p>
+        <p class="preco">R$ 400,30</p>
+        <a href="https://www.kabum.com.br/produto/621162" target="_blank">Kabum</a>
+      </div>
+      <div class="card">
+        <img src="nito.jpeg" alt="Notebook Acer Nitro V15">
+        <h3>Acer Nitro V15</h3>
+        <p class="preco">R$ 4.650,01</p>
+        <p>-22% de desconto</p>
+        <a href="https://www.kabum.com.br/produto/564916" target="_blank">Kabum</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-logo">NEXTIME</div>
+    <p>Desenvolvido por Nextime Group</p>
+    <p>Contato: <a href="mailto:contato@nextime.com.br">contato@nextime.com.br</a> | Instagram: <a href="https://instagram.com/nextime" target="_blank">@nextime</a></p>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
