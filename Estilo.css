@@ -39,3 +39,4 @@ header nav a:hover {color:#27ae60;}
 
 /* Responsivo */
 @media(max-width:600px){.produtos{grid-template-columns:1fr;padding:12px;}.banner{height:140px;}}
+
