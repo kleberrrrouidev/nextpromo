@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KLEblioteca</title>
+  <title>Biblioteca Digital</title>
   <style>
     * {
       margin: 0;
@@ -13,15 +13,15 @@
     }
 
     body {
-      background: linear-gradient(135deg, #ecedee, #7e7e7e, #000000);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
       min-height: 100vh;
     }
 
     header {
       padding: 20px;
-      text-align: left;
-      background: rgba(92, 92, 92, 0.4);
+      text-align: center;
+      background: rgba(0,0,0,0.4);
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
@@ -29,7 +29,7 @@
     }
 
     header h1 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .search-bar {
@@ -93,7 +93,7 @@
       display: inline-block;
       padding: 10px 20px;
       border-radius: 25px;
-      background: linear-gradient(45deg, #35658d, #dd2476);
+      background: linear-gradient(45deg, #ff512f, #dd2476);
       color: white;
       text-decoration: none;
       transition: 0.3s;
@@ -115,7 +115,7 @@
 <body>
 
 <header>
-  <h1>Bookstation</h1>
+  <h1>📚 Biblioteca Digital</h1>
   <div class="search-bar">
     <input type="text" id="search" placeholder="Buscar livro..." onkeyup="searchBooks()">
   </div>
@@ -129,12 +129,12 @@
   <div class="game-box"><h3>O Pequeno Príncipe</h3><a href="links/pequeno_principe.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>1984</h3><a href="links/1984.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>Orgulho e Preconceito</h3><a href="links/orgulho_preconceito.html" class="download-btn">Download</a></div>
-  <div class="game-box"><h3>A Revolução dos Bichos</h3><a href="ardb.pdf" class="download-btn">Download</a></div>
+  <div class="game-box"><h3>A Revolução dos Bichos</h3><a href="links/revolucao_bichos.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>O Hobbit</h3><a href="links/hobbit.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>Harry Potter e a Pedra Filosofal</h3><a href="links/hp1.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>O Senhor dos Anéis</h3><a href="links/lotr.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>O Código Da Vinci</h3><a href="links/codigo_davinci.html" class="download-btn">Download</a></div>
-  <div class="game-box"><h3>Crepúsculo</h3><a href="crp.pdf" class="download-btn">Download</a></div>
+  <div class="game-box"><h3>Crepúsculo</h3><a href="links/crepusculo.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>Jogos Vorazes</h3><a href="links/jogos_vorazes.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>It: A Coisa</h3><a href="links/it.html" class="download-btn">Download</a></div>
   <div class="game-box"><h3>O Iluminado</h3><a href="links/iluminado.html" class="download-btn">Download</a></div>
@@ -144,7 +144,7 @@
 </div>
 
 <footer>
-  <p>© Feito por Kleber, sem fins lucartivos.</p>
+  <p>© 2026 Biblioteca Digital</p>
 </footer>
 
 <script>
